@@ -1,4 +1,4 @@
-public class Vehicle {
+public abstract class Vehicle implements Serviceable {
     private String modelName;
     private int wheelsCount;
 
@@ -21,5 +21,8 @@ public class Vehicle {
 
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
+    }
+    @Override
+    public void doService() {
     }
 }

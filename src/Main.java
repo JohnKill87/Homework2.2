@@ -12,11 +12,12 @@ public class Main {
         Bicycle bicycle2 = new Bicycle("bicycle2", 2);
 
 
-        ServiceStation.check(bicycle);
-        ServiceStation.check(bicycle2);
-        ServiceStation.check(car);
-        ServiceStation.check(car2);
-        ServiceStation.check(truck);
-        ServiceStation.check(truck2);
+        ServiceStation station = new ServiceStation();
+        station.check(bicycle2);
+        station.check(bicycle);
+        station.check(car2);
+        station.check(car);
+        station.check(truck2);
+        station.check(truck);
     }
 }
